@@ -9,15 +9,79 @@
 
     <EditText
         android:id="@+id/cost_of_service"
-        android:layout_width="160dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:hint="Cost of Service"
         android:inputType="numberDecimal"
-        android:textSize="20dp"
         android:textAlignment="center"
+        android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:hint="Cost of Service"
-    />
+        />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How was the Service?"
+        android:id="@+id/satisfaction_question"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cost_of_service"
+        />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/options"
+        app:layout_constraintTop_toBottomOf="@id/satisfaction_question"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical"
+        android:checkedButton="@id/button_thirty_percent"
+        >
+
+        <RadioButton
+            android:id="@+id/button_thirty_percent"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Best meal ever - 30%"
+            />
+        <RadioButton
+            android:id="@+id/button_twenty_percent"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Perfect - 20%"
+            />
+        <RadioButton
+            android:id="@+id/button_fifteen_percent"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Very Good - 15%"
+            />
+        <RadioButton
+            android:id="@+id/button_ten_percent"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="OK - 10%"
+            />
+        <RadioButton
+            android:id="@+id/button_five_percent"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Could be better - 5%"
+            />
+    </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Would you like to roundup?"
+        android:id="@+id/roundup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/options"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/roundup"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
