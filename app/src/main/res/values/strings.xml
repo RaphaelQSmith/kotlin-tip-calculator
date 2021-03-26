@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Tip Calculator</string>
+    <string name="cost_of_service">Cost of Service</string>
+    <string name="how_was_the_service">How was the Service?</string>
+    <string name="best_meal_ever_30">Best meal ever - 30%</string>
+    <string name="perfect_20">Perfect - 20%</string>
+    <string name="very_good_15">Very Good - 15%</string>
+    <string name="ok_10">OK - 10%</string>
+    <string name="could_be_better_5">Could be better - 5%</string>
+    <string name="would_you_like_to_roundup">Would you like to roundup?</string>
+    <string name="calculate">Calculate</string>
+    <string name="total_tip">Total Tip</string>
 </resources>
