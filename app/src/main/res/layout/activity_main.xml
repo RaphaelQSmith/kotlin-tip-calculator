@@ -91,8 +91,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/total_tip"
         app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Tip Amount: $10"
+        android:id="@+id/totaltip"
         app:layout_constraintTop_toBottomOf="@id/calculatebt" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
